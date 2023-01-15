@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
-.navbar{
+
+.navbar {
     display: flex;
     background-color: white;
 }
-.navbar_left{
+
+.navbar_left {
     margin-left: 90px;
     width: 20%;
     background-color: rgb(15, 69, 69);
@@ -15,40 +17,48 @@
     padding: 20px 30px;
     text-align: center;
 }
-.navbar-right{
+
+.navbar-right {
     width: 50%;
     justify-content: flex-end
 }
-.navbar-right ul{
+
+.navbar-right ul {
     justify-content: flex-end;
     display: flex;
     list-style-type: none;
     color: black;
     padding: 30px 0;
 }
-.navbar-right ul li{
+
+.navbar-right ul li {
     padding: 0 20px;
 }
-.navbar-right ul li a{
+
+.navbar-right ul li a {
     text-decoration: none;
     color: black;
 }
-.about_page{
+
+.about_page {
     background-color: darkgray;
     display: flex;
     padding: 40px 90px;
 }
-.aboutme{
+
+.aboutme {
     width: 60%;
     background-color: white;
     margin-right: 20px;
     padding: 15px 20px;
 }
+
 .aboutme h2,
-.connected h2{
+.connected h2 {
     color: cadetblue;
 }
-.connected{
+
+.connected {
     width: 20%;
     background-color: white;
     height: 200px;
@@ -57,43 +67,53 @@
     align-items: center;
 
 }
-.about-n{
+
+.about-n {
     display: flex;
 }
-.about-n p{
+
+.about-n p {
     padding-left: 10px;
     padding-right: 10px;
 }
-.next{
+
+.next {
     margin-top: 20px;
 }
-.connect-img{
+
+.connect-img {
     display: flex;
     margin-top: 30px;
     justify-content: center;
 }
-.connect-img img{
+
+.connect-img img {
     width: 50px;
     height: 50px;
 }
-.line{
+
+.line {
     margin: 20px 0;
 }
-.portfolio-main{
+
+.portfolio-main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding-left: 40px;
 }
-.portfolio-main img{
+
+.portfolio-main img {
     width: 300px;
     height: 170px;
 }
-.portfolio-item{
+
+.portfolio-item {
     padding: 0 15px;
     position: relative;
 }
-.portfolio-item p{
+
+.portfolio-item p {
     position: absolute;
     bottom: 24px;
     right: 0;
@@ -103,15 +123,20 @@
     color: white;
     padding: 10px;
 }
-footer{
+
+footer {
     background: black;
     padding: 30px 0;
 }
-footer p{
+
+footer p {
     color: white;
     text-align: center;
 }
-input[type=text], select, textarea {
+
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -120,21 +145,76 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: cadetblue;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-.linefo{
+}
+
+.linefo {
     background-color: cadetblue;
     height: 10px;
+}
+
+
+/*media start*/
+@media only screen and (max-width: 1000px) {
+    .about_page{
+        display: block;
+    }
+    .aboutme{
+        width: 100%;
+    }
+    .connected{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .about-n{
+        display: block;
+    }
+    .about-n img{
+        max-width: 350px;
+    }
+    .navbar_left{
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .about_page{
+        padding: 20px 10px;
+    }
+    .about-n img{
+        max-width: 250px;
+    }
+    .navbar_left{
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .aboutme{
+        width: 100%;
+    }
+    .navbar{
+        display: block;
+    }
+    .about-n img{
+        max-width: 200px;
+    }
+    .navbar_left{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .navbar-right{
+        width: 80%;
+    }
 }
